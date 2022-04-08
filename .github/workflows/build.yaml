@@ -9,8 +9,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Install and Build 🔧
+        uses: actions/setup-node@v2
         with:
           node-version: 17.x
       - run: |
@@ -19,3 +22,10 @@ jobs:
           npm run build
           npx playwright install
           npm run test
+
+      - name: Deploy 🚀
+        if: github.ref == 'ref/head/main'
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
