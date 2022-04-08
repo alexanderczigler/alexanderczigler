@@ -1,0 +1,21 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 17.x
+      - run: |
+          npm ci
+          npm run lint
+          npm run build
+          npx playwright install-deps
+          npm run test
