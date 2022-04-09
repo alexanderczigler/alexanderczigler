@@ -6,8 +6,6 @@ My passion for software and the web began in the late 90's when I started learni
 
 ## Related
 
-- [Duolingo](https://www.duolingo.com/profile/alexanderczigler)
 - [Goodreads](https://goodreads.com/alexanderczigler)
+- [Iteam Solutions](https://iteam.se/about/alexander-czigler)
 - [LinkedIn](https://linkedin.com/in/alexanderczigler)
-- [SoundCloud](https://soundcloud.com/alexanderczigler)
-- [Strava]()
