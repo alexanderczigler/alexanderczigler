@@ -16,7 +16,7 @@ What began as a hobby slowly transitioned into freelance work. It began with fri
 
 After high-school I went to college to study mechanical engineering but I eventually dropped out and in 2008 I began working as a consultant in Stockholm, Sweden. Since then I have been working on a vast number of different projects.
 
-## Specialties
+## Specialty
 
 I am just as passionate about writing code as I am about the process of software development itself. During my career I have had the privilege of working with several different organisations and learning a lot about why IT projects fail or succeed.
 
