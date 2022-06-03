@@ -1,18 +1,12 @@
 <script>
-  import config from '../lib/config';
-
   import Book from './icons/Book.svelte';
   import Industry from './icons/Industry.svelte';
   import GitHub from './icons/GitHub.svelte';
   import LinkedIn from './icons/LinkedIn.svelte';
-  import Mail from './icons/Mail.svelte';
   import Quote from './icons/Quote.svelte';
 </script>
 
-<span class="flex">
-  <a class="mr-1" href="mailto:{config.email}" target="_blank" title="Send me an email">
-    <Mail /></a
-  >
+<span class="flex text-text-fade">
   <a
     class="mr-1"
     href="https://linkedin.com/in/alexanderczigler"
