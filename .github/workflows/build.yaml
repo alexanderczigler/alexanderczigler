@@ -25,6 +25,7 @@ jobs:
           npm run build
           npx playwright install
           npm run test
+          touch build/.nojekyll
 
       - name: Deploy 🚀
         if: github.ref_name == 'main'
