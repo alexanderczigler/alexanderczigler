@@ -1,6 +1,6 @@
 <svg
   width="24"
-  stroke-width="1.5"
+  stroke-width="1"
   height="24"
   viewBox="0 0 24 24"
   fill="none"

@@ -3,15 +3,14 @@
 </svelte:head>
 
 <div
-  class="border-t-background-fade border-t flex flex-col justify-center items-left font-josefinSans px-5 pt-5 font-light text-text"
+  class="border-t-background-fade border-t border-b border-b-background-fade flex flex-col justify-center items-left font-josefinSans px-5 pt-5 font-light text-text"
   role="main"
 >
   <h3 class="font-firaCode my-4 text-2xl">Hello!</h3>
   <p class="my-4">
     I am Alexander Czigler. I help companies improve their culture and ways of working with code.
+    When I am not working I love spending time dancing, reading or being out in nature.
   </p>
-
-  <img alt="Headstand" class="border-slate-400  rounded-lg" src="hero.jpg" />
 
   <p class="my-4">
     My story began around 1997 when I got my first PC with dialup internet. I quickly became
@@ -34,11 +33,4 @@
 
   <h3 class="font-firaCode my-4 text-2xl">Experience</h3>
   <p class="my-4">TODO: Add experience</p>
-
-  <!-- <h3 class="font-firaCode my-4 text-2xl">Övrigt</h3> -->
-
-  <!-- <p class="my-4">
-    På fritiden tränar jag dans, både contemporary och pole samt en del yoga. Jag tycker också om
-    att läsa böcker och vandra.
-  </p> -->
 </div>
