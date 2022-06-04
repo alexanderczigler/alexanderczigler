@@ -26,7 +26,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@sveltejs/adapter-static": "1.0.0-next.29",
+    "@sveltejs/adapter-static": "1.0.0-next.34",
     "mdsvex": "^0.10.6",
     "preprocess": "^3.2.0",
     "rehype-external-links": "^1.0.1",
