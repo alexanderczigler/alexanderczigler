@@ -30,6 +30,6 @@
     "mdsvex": "^0.10.6",
     "preprocess": "^3.2.0",
     "rehype-external-links": "^1.0.1",
-    "svelte-preprocess": "^4.10.6"
+    "svelte-preprocess": "4.10.7"
   }
 }
