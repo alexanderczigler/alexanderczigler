@@ -4,18 +4,26 @@
   let resume = [];
   for (let path in resumeMarkdown) {
     const experience = resumeMarkdown[path];
-    const metadata = experience.metadata;
 
-    if (typeof metadata.buzzwords === 'string') {
-      metadata.buzzwords = metadata.buzzwords.replaceAll(' ', '');
-      metadata.buzzwords = metadata.buzzwords.replaceAll('_', ' ');
-      metadata.buzzwords = metadata.buzzwords.split(',');
-      metadata.buzzwords = metadata.buzzwords.sort();
+    let from, to, year;
+    if (!!experience.metadata.year) {
+      year = experience.metadata.year;
+      from = year;
+      to = year;
+    }
+
+    if (!!experience.metadata.years) {
+      from = experience.metadata.years.split(',')[0];
+      to = experience.metadata.years.split(',')[1];
+      year = `${from}—${to}`;
     }
 
     resume.push({
-      metadata,
       experience: experience,
+      heading: experience.metadata.heading,
+      year,
+      from,
+      to,
     });
   }
 
@@ -37,11 +45,11 @@
   const sortDelegate = (a, b) => {
     const ongoing = new Date().getFullYear() + 1;
 
-    let weightA = a.metadata.start;
-    weightA += (a.metadata.end ? a.metadata.end : ongoing) - a.metadata.start;
+    let weightA = a.from;
+    weightA += (a.to ? a.to : ongoing) - a.from;
 
-    let weightB = b.metadata.start;
-    weightB += (b.metadata.end ? b.metadata.end : ongoing) - b.metadata.start;
+    let weightB = b.from;
+    weightB += (b.to ? b.to : ongoing) - b.from;
 
     if (weightA > weightB) {
       return -1;
@@ -90,23 +98,13 @@
 
   <h3 class="font-firaCode my-4 text-2xl">Experience</h3>
 
-  {#each experiences as experience}
-    <h4 class="font-firaCode my-4 text-xl">
-      {experience.metadata.heading} ({experience.metadata.start} &mdash; {experience.metadata.end ??
-        ''})
-    </h4>
+  <div class="space-y-4">
+    {#each experiences as experience}
+      <h4 class="font-firaCode my-4 text-xl">
+        {experience.heading} ({experience.year})
+      </h4>
 
-    <svelte:component this={experience.experience.default} />
-
-    <p class="mt-4">
-      <span class="text-fade pt-0">
-        Tags:
-        {#each experience.metadata.buzzwords as buzzword}
-          <span class="text-text-fade text-sm font-firaCode bg-background-fade p-1 mx-2"
-            >#{buzzword}</span
-          >
-        {/each}
-      </span>
-    </p>
-  {/each}
+      <svelte:component this={experience.experience.default} />
+    {/each}
+  </div>
 </div>
