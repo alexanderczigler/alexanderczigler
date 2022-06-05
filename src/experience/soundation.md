@@ -1,6 +1,6 @@
 ---
 heading: Kick-starting a Flash to HTML + Native Client rewrite
-years: 2020,2021
+years: 2014,2015
 ---
 
 PowerFX came to us because they were looking to rebuild their Soundation Studio from the ground up, using html and javascript. The studio was originally built using Flash and since its original release the capabilites of javascript and browsers have improved significally (while Flash was a dying platform).
