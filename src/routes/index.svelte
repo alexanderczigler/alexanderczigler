@@ -99,12 +99,12 @@
   <h3 class="font-firaCode my-4 text-2xl">Skills</h3>
 
   <p class="my-4 mx-2">
-    <span class="font-bold">Code:</span> .NET, dotnet core, nodejs, shell, typescript (bash, zsh,
-    powershell)
+    <span class="font-bold">Code:</span> .NET, dotnet core, javascript, nodejs, shell, typescript
+    (bash, zsh, powershell)
     <br />
     <span class="font-bold">Culture:</span> agile, developer experience, devops
     <br />
-    <span class="font-bold">Tech:</span> docker, kubernetes, linux server
+    <span class="font-bold">Tech:</span> docker, kubernetes, linux, no-sql, sql
     <br />
     <span class="font-bold">UX:</span> analytics, figma, interviewing, matomo, user research, user story
     mapping
