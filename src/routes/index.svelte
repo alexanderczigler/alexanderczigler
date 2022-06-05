@@ -66,7 +66,7 @@
   <h3 class="font-firaCode my-4 text-2xl">Hello!</h3>
   <p class="my-4">
     I am Alexander Czigler. I help companies improve their culture and ways of working with code.
-    When I am not working I love spending time dancing, reading or being out in nature.
+    When I am not at my keyboard I love dancing, reading and being out in nature.
   </p>
 
   <p class="my-4">

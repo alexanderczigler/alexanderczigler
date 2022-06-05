@@ -1,6 +1,6 @@
 # Hello 👋
 
-I am Alexander Czigler. I help companies improve their culture and ways of working with code. When I am not working I love spending time dancing, reading or being out in nature.
+I am Alexander Czigler. I help companies improve their culture and ways of working with code. When I am not at my keyboard I love dancing, reading and being out in nature.
 
 My story began around 1997 when I got my first PC with dialup internet. I quickly became enchanted by the web and it did not take long until I wanted to build my own homepage so that I could become a part of the web myself. Dialup was expensive I was only allowed to go online for a few hours every week. I spent that precious time online learning about HTML (and playing Flight Simulator 98!) and finding free hosts where I could publish my creations.
 
