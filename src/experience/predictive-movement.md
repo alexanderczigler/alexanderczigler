@@ -9,4 +9,4 @@ During the time I was working with Predictive Movement we developed a platform f
 
 Towards the end I also worked on the code behind both the platform and the digital twin and I helped troubleshoot and modify the kubernetes hosting environment. The solutions were built using nodejs, elixir, typescript and rxjs. Other technologies used: using Open Street Map, Mapbox, Figma, Telegram.
 
-Read more about the project on (Vinnova)[https://www.vinnova.se/p/predictive-movement/] and check out the (Predictive Movement GitHub)[https://github.com/PredictiveMovement].
+Read more about the project on [Vinnova](https://www.vinnova.se/p/predictive-movement/) and check out the [Predictive Movement GitHub](https://github.com/PredictiveMovement).
