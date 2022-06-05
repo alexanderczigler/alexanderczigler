@@ -6,13 +6,13 @@
     const experience = resumeMarkdown[path];
 
     let from, to, year;
-    if (!!experience.metadata.year) {
+    if (experience.metadata.year) {
       year = experience.metadata.year;
       from = year;
       to = year;
     }
 
-    if (!!experience.metadata.years) {
+    if (experience.metadata.years) {
       from = experience.metadata.years.split(',')[0];
       to = experience.metadata.years.split(',')[1];
       year = `${from}—${to}`;
