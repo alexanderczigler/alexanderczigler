@@ -39,7 +39,7 @@
     <Book /></a
   >
 
-  <a class="mr-1" href="https://dev.to/alexanderczigler" target="_blank" title="My DevLog">
+  <a class="mr-1" href="https://dev.to/alexanderczigler" target="_blank" title="My blog">
     <Quote /></a
   >
 </span>

@@ -64,7 +64,7 @@
 </script>
 
 <svelte:head>
-  <title>Alexander Czigler</title>
+  <title>Alexander Czigler - Curriculum Vitae</title>
 </svelte:head>
 
 <div
