@@ -1,4 +1,4 @@
-<div id="header" class="flex flex-col justify-center items-center pt-12 font-josefinSans">
+<div id="header" class="flex flex-col justify-center items-center pt-12 font-josefin-sans">
   <h1
     class="color-zinc-100 block text-5xl text-center font-extralight mt-4 pt-0 leading-10 text-text"
   >

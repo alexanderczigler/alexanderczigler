@@ -11,8 +11,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        firaCode: ['Fira Code', 'monotype'],
-        josefinSans: ['Josefin Sans', 'sans-serif'],
+        'fira-code': ['Fira Code', 'monotype'],
+        'josefin-sans': ['Josefin Sans', 'sans-serif'],
       },
     },
   },

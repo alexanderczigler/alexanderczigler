@@ -37,6 +37,8 @@
 </script>
 
 <script>
+  import Socials from '../components/Socials.svelte';
+
   export let experiences;
 
   /*
@@ -68,10 +70,10 @@
 </svelte:head>
 
 <div
-  class="border-t-background-fade border-t border-b border-b-background-fade flex flex-col justify-center items-left font-josefinSans p-5 font-light text-text"
+  class="border-t-background-fade border-t border-b border-b-background-fade flex flex-col justify-center items-left font-josefin-sans p-5 font-light text-text"
   role="main"
 >
-  <h3 class="font-firaCode my-4 text-2xl">Hello!</h3>
+  <h3 class="font-fira-code my-4 text-3xl">Hello!</h3>
   <p class="my-4 mx-2">
     I am Alexander Czigler. I help companies improve their culture and ways of working with code.
     When I am not at my keyboard I love dancing, reading and being out in nature.
@@ -96,24 +98,27 @@
     learned how to setup my own web server among other things.
   </p>
 
-  <h3 class="font-firaCode my-4 text-2xl">Skills</h3>
+  <div class="flex flex-col items-left pt-4 pb-4 mx-2">
+    <Socials />
+  </div>
 
-  <p class="my-4 mx-2">
-    <span class="font-bold">Code:</span> .NET, dotnet core, javascript, nodejs, shell, typescript
-    (bash, zsh, powershell)
-    <br />
-    <span class="font-bold">Culture:</span> agile, developer experience, devops
-    <br />
-    <span class="font-bold">Tech:</span> docker, kubernetes, linux, no-sql, sql
-    <br />
-    <span class="font-bold">UX:</span> analytics, figma, interviewing, matomo, user research, user story
-    mapping
+  <h3 class="font-fira-code mb-4 mt-12 text-3xl">Skills</h3>
+
+  <p class="my-4 mx-2 font-fira-code">
+    <span class="font-bold uppercase text-sm">Code:</span> .NET, dotnet core, javascript, nodejs,
+    shell scripting (bash, zsh, powershell), typescript
+    <br /><span class="font-bold uppercase text-sm">Culture:</span> agile, developer experience,
+    devops
+    <br /><span class="font-bold uppercase text-sm">Tech:</span> databases (sql, no-sql, queues),
+    docker, kubernetes, linux
+    <br /><span class="font-bold uppercase text-sm">UX:</span> analytics, figma, interviewing, matomo,
+    user research, user story mapping
   </p>
 
-  <h3 class="font-firaCode my-4 text-2xl">Experience</h3>
+  <h3 class="font-fira-code mb-0 mt-12 text-3xl">Experience</h3>
 
   {#each experiences as experience}
-    <h4 class="font-firaCode text-lg pt-10 mb-4 font-semibold">
+    <h4 class="font-fira-code text-lg pt-10 mb-4 font-semibold">
       {experience.heading} ({experience.year})
     </h4>
 
