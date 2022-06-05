@@ -72,12 +72,12 @@
   role="main"
 >
   <h3 class="font-firaCode my-4 text-2xl">Hello!</h3>
-  <p class="my-4">
+  <p class="my-4 mx-2">
     I am Alexander Czigler. I help companies improve their culture and ways of working with code.
     When I am not working I love spending time dancing, reading or being out in nature.
   </p>
 
-  <p class="my-4">
+  <p class="my-4 mx-2">
     My story began around 1997 when I got my first PC with dialup internet. I quickly became
     enchanted by the web and it did not take long until I wanted to build my own homepage so that I
     could become a part of the web myself. Dialup was expensive I was only allowed to go online for
@@ -85,7 +85,7 @@
     Flight Simulator 98!) and finding free hosts where I could publish my creations.
   </p>
 
-  <p class="my-4">
+  <p class="my-4 mx-2">
     In 2003 my journey took a giant leap as I got DSL at home. This was a huge thing for me as I was
     suddenly able to go online as much as I wanted; I was no longer restricted by the cost or speed
     of dialup. Having 24/7 access to the internet meant I could spend more time on the social
@@ -96,15 +96,29 @@
     learned how to setup my own web server among other things.
   </p>
 
+  <h3 class="font-firaCode my-4 text-2xl">Skills</h3>
+
+  <p class="my-4 mx-2">
+    <span class="font-bold">Code:</span> .NET, dotnet core, nodejs, shell, typescript (bash, zsh,
+    powershell)
+    <br />
+    <span class="font-bold">Culture:</span> agile, developer experience, devops
+    <br />
+    <span class="font-bold">Tech:</span> docker, kubernetes, linux server
+    <br />
+    <span class="font-bold">UX:</span> analytics, figma, interviewing, matomo, user research, user story
+    mapping
+  </p>
+
   <h3 class="font-firaCode my-4 text-2xl">Experience</h3>
 
-  <div class="space-y-4">
-    {#each experiences as experience}
-      <h4 class="font-firaCode my-4 text-xl">
-        {experience.heading} ({experience.year})
-      </h4>
+  {#each experiences as experience}
+    <h4 class="font-firaCode text-lg pt-10 mb-4 font-semibold">
+      {experience.heading} ({experience.year})
+    </h4>
 
+    <span class="space-y-4 mx-2">
       <svelte:component this={experience.experience.default} />
-    {/each}
-  </div>
+    </span>
+  {/each}
 </div>
