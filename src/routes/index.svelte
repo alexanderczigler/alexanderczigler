@@ -4,18 +4,26 @@
   let resume = [];
   for (let path in resumeMarkdown) {
     const experience = resumeMarkdown[path];
-    const metadata = experience.metadata;
 
-    if (typeof metadata.buzzwords === 'string') {
-      metadata.buzzwords = metadata.buzzwords.replaceAll(' ', '');
-      metadata.buzzwords = metadata.buzzwords.replaceAll('_', ' ');
-      metadata.buzzwords = metadata.buzzwords.split(',');
-      metadata.buzzwords = metadata.buzzwords.sort();
+    let from, to, year;
+    if (experience.metadata.year) {
+      year = experience.metadata.year;
+      from = year;
+      to = year;
+    }
+
+    if (experience.metadata.years) {
+      from = experience.metadata.years.split(',')[0];
+      to = experience.metadata.years.split(',')[1];
+      year = `${from}—${to}`;
     }
 
     resume.push({
-      metadata,
       experience: experience,
+      heading: experience.metadata.heading,
+      year,
+      from,
+      to,
     });
   }
 
@@ -37,11 +45,11 @@
   const sortDelegate = (a, b) => {
     const ongoing = new Date().getFullYear() + 1;
 
-    let weightA = a.metadata.start;
-    weightA += (a.metadata.end ? a.metadata.end : ongoing) - a.metadata.start;
+    let weightA = a.from;
+    weightA += (a.to ? a.to : ongoing) - a.from;
 
-    let weightB = b.metadata.start;
-    weightB += (b.metadata.end ? b.metadata.end : ongoing) - b.metadata.start;
+    let weightB = b.from;
+    weightB += (b.to ? b.to : ongoing) - b.from;
 
     if (weightA > weightB) {
       return -1;
@@ -56,7 +64,7 @@
 </script>
 
 <svelte:head>
-  <title>Alexander Czigler</title>
+  <title>Alexander Czigler - Curriculum Vitae</title>
 </svelte:head>
 
 <div
@@ -64,12 +72,12 @@
   role="main"
 >
   <h3 class="font-firaCode my-4 text-2xl">Hello!</h3>
-  <p class="my-4">
+  <p class="my-4 mx-2">
     I am Alexander Czigler. I help companies improve their culture and ways of working with code.
-    When I am not working I love spending time dancing, reading or being out in nature.
+    When I am not at my keyboard I love dancing, reading and being out in nature.
   </p>
 
-  <p class="my-4">
+  <p class="my-4 mx-2">
     My story began around 1997 when I got my first PC with dialup internet. I quickly became
     enchanted by the web and it did not take long until I wanted to build my own homepage so that I
     could become a part of the web myself. Dialup was expensive I was only allowed to go online for
@@ -77,7 +85,7 @@
     Flight Simulator 98!) and finding free hosts where I could publish my creations.
   </p>
 
-  <p class="my-4">
+  <p class="my-4 mx-2">
     In 2003 my journey took a giant leap as I got DSL at home. This was a huge thing for me as I was
     suddenly able to go online as much as I wanted; I was no longer restricted by the cost or speed
     of dialup. Having 24/7 access to the internet meant I could spend more time on the social
@@ -88,25 +96,29 @@
     learned how to setup my own web server among other things.
   </p>
 
+  <h3 class="font-firaCode my-4 text-2xl">Skills</h3>
+
+  <p class="my-4 mx-2">
+    <span class="font-bold">Code:</span> .NET, dotnet core, javascript, nodejs, shell, typescript
+    (bash, zsh, powershell)
+    <br />
+    <span class="font-bold">Culture:</span> agile, developer experience, devops
+    <br />
+    <span class="font-bold">Tech:</span> docker, kubernetes, linux, no-sql, sql
+    <br />
+    <span class="font-bold">UX:</span> analytics, figma, interviewing, matomo, user research, user story
+    mapping
+  </p>
+
   <h3 class="font-firaCode my-4 text-2xl">Experience</h3>
 
   {#each experiences as experience}
-    <h4 class="font-firaCode my-4 text-xl">
-      {experience.metadata.heading} ({experience.metadata.start} &mdash; {experience.metadata.end ??
-        ''})
+    <h4 class="font-firaCode text-lg pt-10 mb-4 font-semibold">
+      {experience.heading} ({experience.year})
     </h4>
 
-    <svelte:component this={experience.experience.default} />
-
-    <p class="mt-4">
-      <span class="text-fade pt-0">
-        Tags:
-        {#each experience.metadata.buzzwords as buzzword}
-          <span class="text-text-fade text-sm font-firaCode bg-background-fade p-1 mx-2"
-            >#{buzzword}</span
-          >
-        {/each}
-      </span>
-    </p>
+    <span class="space-y-4 mx-2">
+      <svelte:component this={experience.experience.default} />
+    </span>
   {/each}
 </div>
