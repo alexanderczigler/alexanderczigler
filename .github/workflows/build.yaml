@@ -18,7 +18,7 @@ jobs:
       - name: 🔧 Install and Build
         uses: actions/setup-node@v3
         with:
-          node-version: 17.x
+          node-version: 16.x
       - run: |
           npm ci
           npm run lint
