@@ -1,4 +1,4 @@
 {
-  "assignees": ["alexanderczigler"],
-  "extends": ["config:base"]
+  "extends": ["config:base"],
+  "reviewers": ["alexanderczigler"]
 }
