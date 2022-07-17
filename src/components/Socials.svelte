@@ -6,7 +6,7 @@
   import Quote from './icons/Quote.svelte';
 </script>
 
-<span class="flex text-text-fade">
+<span class="flex text-zinc-600">
   <a
     class="mr-1"
     href="https://linkedin.com/in/alexanderczigler"
@@ -43,16 +43,3 @@
     <Quote /></a
   >
 </span>
-
-<style>
-  a {
-    background-color: unset;
-    color: var(--haze);
-    fill: var(--haze);
-  }
-
-  a:hover {
-    color: var(--accent);
-    fill: var(--accent);
-  }
-</style>

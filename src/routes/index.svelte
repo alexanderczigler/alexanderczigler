@@ -70,14 +70,23 @@
 </svelte:head>
 
 <div
-  class="border-t-background-fade border-t border-b border-b-background-fade flex flex-col justify-center items-left font-josefin-sans p-5 font-light text-text"
+  class="border-zinc-200 border-b flex flex-col justify-center items-left font-josefin-sans p-5 font-light text-zinc-900 mt-12 pb-12"
   role="main"
 >
-  <h3 class="font-fira-code my-4 text-3xl">Hello!</h3>
-  <p class="my-4 mx-2">
-    I am Alexander Czigler. I help companies improve their culture and ways of working with code.
-    When I am not at my keyboard I love dancing, reading and being out in nature.
+  <h3 class="font-fira-code my-4 text-3xl text-center font-extralight">Hello.</h3>
+  <p class="my-4 mx-8 text-xl text-center font-black font-fira-code">
+    I am Alexander.<br /> I live in Stockholm. I work with code. I am passionate about Developer
+    Experience and DevOps culture.
+    <br /><br />
+    When I am away from the keyboard I love poledancing, yoga and walking. I enjoy tea and reading science
+    fiction.
   </p>
+
+  <div class="flex flex-col items-center pt-4 pb-4 mx-2 mb-12">
+    <Socials />
+  </div>
+
+  <h4 class="font-fira-code text-lg pt-10 mb-4 font-semibold mx-1">Background</h4>
 
   <p class="my-4 mx-2">
     My story began around 1997 when I got my first PC with dialup internet. I quickly became
@@ -98,10 +107,6 @@
     learned how to setup my own web server among other things.
   </p>
 
-  <div class="flex flex-col items-left pt-4 pb-4 mx-2">
-    <Socials />
-  </div>
-
   <h3 class="font-fira-code mb-4 mt-12 text-3xl">Skills</h3>
 
   <p class="my-4 mx-2 font-fira-code">
@@ -118,7 +123,7 @@
   <h3 class="font-fira-code mb-0 mt-12 text-3xl">Experience</h3>
 
   {#each experiences as experience}
-    <h4 class="font-fira-code text-lg pt-10 mb-4 font-semibold">
+    <h4 class="font-fira-code text-lg pt-10 mb-4 font-semibold mx-1">
       {experience.heading} ({experience.year})
     </h4>
 
