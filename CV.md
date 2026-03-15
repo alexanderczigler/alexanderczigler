@@ -29,12 +29,18 @@ Around 1997 I got my own PC and dialup at home. Dialup was expensive and I was o
 
 | Period | Company | Role |
 |--------|---------|------|
+| 2023–present | SEB | Solution Developer |
 | 2013–2023 | Iteam Solutions | Backend Developer & Partner |
 | 2010–2013 | Mogul | System Developer |
 | 2008–2010 | Hitone/PDB | System Developer |
 | 2004–2008 | freelance | Web Designer/Developer |
 
 ## Projects
+
+### Solution Developer
+> 2023–present | SEB
+
+I am working on a green-field project, building backends and infrastructure in TypeScript on GCP. The system integrates with a large number of internal and external APIs, and sits in the middle of a landscape filled with old, complex legacy systems and decades worth of accumulated business rules. It is exactly the kind of domain I enjoy — there is always something new to untangle and learn.
 
 ### Developer, DevOps Engineer
 > 2022-2023 | centrum för näringslivshistoria
