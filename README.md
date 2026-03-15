@@ -18,6 +18,9 @@ occasionally stepped into UX research when the work called for it.
 - **Infrastructure:** Kubernetes, Docker, GitHub Actions, AWS, GCP
 - **Practices:** DevOps, CI/CD, GitOps, Agile
 
+You can read my full [CV](https://github.com/alexanderczigler/alexanderczigler/blob/main/CV.md) on GitHub.
+
 ## Contact
 
 I am not active on any social media. I am not looking for work right now.
+
