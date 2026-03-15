@@ -24,26 +24,15 @@ Around 1997 I got my own PC and dialup at home. Dialup was expensive and I was o
 - Born: 1985
 - Citizenship: Swedish
 - Languages: Swedish (native), English (fluent), Italian (beginner)
-- Web: https://alexanderczigler.se
 
-## Professional experience
+## Employment
 
-### Backend developer & Partner
-> 2013-2023 | iteam solutions
-
-Working at Iteam has been a long journey filled with many exciting projects. I have had the privilege to work with some of the most skilled and intelligent people I have ever met in my life. For each year that has passed I have learned a lot and grown both as a technologist and as a human being.
-
-In most project my role and responsibilities have been those of a developer but there are exceptions. As I am very interested in DevOps and Developer Experience I am usually the one doing the ground work of setting up servers, clusters as well as automating tests and deployments in CD/CD pipelines. In order to learn more and gain perspective of the developer role, I have also worked a bit with UX Research.
-
-### System developer
-> 2010-2013 | mogul
-
-At Mogul I worked as a system developer building applications in Microsoft .NET and SQL Server. During my time here I deepened my knowledge about .NET, refactoring code and working with different types of integrations between systems.
-
-### System Developer
-> 2008–2010 | HITONE/PDB
-
-At Hitone/Pdb I worked as a Business Intelligence (BI) consultant for a number of industry clients. I built data warehouses and automated reports that provided decision makers with valuable data and insights. These projects taught me a lot about working with SQL and relational databases. I also worked on a number of projects building applications using C#, PHP and shell scripting.
+| Period | Company | Role |
+|--------|---------|------|
+| 2013–2023 | Iteam Solutions | Backend Developer & Partner |
+| 2010–2013 | Mogul | System Developer |
+| 2008–2010 | Hitone/PDB | System Developer |
+| 2004–2008 | freelance | Web Designer/Developer |
 
 ## Projects
 
