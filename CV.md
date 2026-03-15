@@ -47,7 +47,7 @@ At Hitone/Pdb I worked as a Business Intelligence (BI) consultant for a number o
 
 ## Projects
 
-### Developer, DevOps Engineeer
+### Developer, DevOps Engineer
 > 2022-2023 | centrum för näringslivshistoria
 
 I built a microservice ecosystem for traversing data in Comprima/Documaster and doing OCR scanning of attachments. The metadata and OCR text was indexed in ElasticSearch and I built a RESTful API with a website that provides a fast search functionality that covered both metadata and full text search in attachment OCR text.
@@ -74,7 +74,7 @@ The solutions were built using Node.Js, elixir, typescript and RxJS. Other techn
 
 The client is a SaaS company that offers a white label product used in the medical field. The product lets patients come in contact with medical staff such as nurses, doctors and psychiatrists via chat and video. It is used in several countries, Sweden being one of them.
 
-In this particual project I helped the client perform a case study on how to implement true end-to-end encryption (ETEE) in the chat feature of their product. ETEE would ensure that only patients and specific members of medical staff would be able to access the keys necesarry to decrypt each chat session. During the project I built a simple proof-of-concept where I implemented ETEE between two chat clients. I used the PoC to demonstrate how the technical solution could work. The end result of the project was a report detailing how ETEE works, different approaches and various pitfalls and UX impacts of implementing ETEE.
+In this particular project I helped the client perform a case study on how to implement true end-to-end encryption (ETEE) in the chat feature of their product. ETEE would ensure that only patients and specific members of medical staff would be able to access the keys necesarry to decrypt each chat session. During the project I built a simple proof-of-concept where I implemented ETEE between two chat clients. I used the PoC to demonstrate how the technical solution could work. The end result of the project was a report detailing how ETEE works, different approaches and various pitfalls and UX impacts of implementing ETEE.
 
 ### Developer
 > 2020–2022 | UNDISCLOSED
